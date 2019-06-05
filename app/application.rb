@@ -26,6 +26,7 @@ class Application
     elsif req.path.match(/add/)
       add_item = req.params["q"]
       resp.write handle_add(add_item)
+      resp.write "added Figs"
     else
       resp.write "Path Not Found"
     end
